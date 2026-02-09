@@ -15,10 +15,23 @@ O sistema permite:
 
 ## Estrutura do repositório
 
+- `index.html`: protótipo do painel principal (dashboard)
+- `public-quote-request.html`: página pública para solicitação de orçamento
+- `assets/`: estilos e scripts do protótipo
 - `docs/requirements.md`: requisitos funcionais e não funcionais
 - `docs/user-flows.md`: fluxos principais da aplicação
 - `docs/database-schema.md`: modelo de dados relacional
 - `docs/api.md`: endpoints REST sugeridos
+
+## Como executar o protótipo
+
+1. Rode um servidor estático na raiz do repositório:
+   ```bash
+   python -m http.server 8000
+   ```
+2. Acesse:
+   - Painel: `http://localhost:8000/index.html`
+   - Link público: `http://localhost:8000/public-quote-request.html`
 
 ## Próximos passos
 

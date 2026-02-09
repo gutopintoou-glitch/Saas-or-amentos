@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrçaSaaS | Dashboard</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <strong>OrçaSaaS</strong>
+          <span>Gestão de orçamentos e contratos</span>
+        </div>
+        <nav class="nav">
+          <a class="active" href="index.html">Dashboard</a>
+          <a href="#">Orçamentos</a>
+          <a href="#">Pedidos</a>
+          <a href="#">Contratos</a>
+          <a href="#">Clientes</a>
+          <a href="#">Configurações</a>
+        </nav>
+        <a class="cta" href="public-quote-request.html">Abrir link público da empresa</a>
+      </aside>
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <h1>Olá, Ana Paula</h1>
+            <p class="helper">Empresa ativa: Agência Aurora • Última atualização agora</p>
+          </div>
+          <span class="badge">Pré-orçamentos: <strong data-pre-count>0</strong></span>
+        </div>
+
+        <section class="cards">
+          <div class="card">
+            <span>Orçamentos criados</span>
+            <strong>128</strong>
+            <span>+12% este mês</span>
+          </div>
+          <div class="card">
+            <span>Orçamentos aceitos</span>
+            <strong>54</strong>
+            <span>Taxa de aceite: 42%</span>
+          </div>
+          <div class="card">
+            <span>Total faturado</span>
+            <strong>R$ 185.240</strong>
+            <span>Meta mensal: R$ 200k</span>
+          </div>
+          <div class="card">
+            <span>Pedidos ativos</span>
+            <strong>16</strong>
+            <span>5 finalizados esta semana</span>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="panel">
+            <h2>Solicitações públicas (pré-orçamentos)</h2>
+            <p class="helper">Recebidas via link público da empresa. Finalize para gerar o orçamento completo.</p>
+            <div class="helper hidden" data-empty-state>Nenhuma solicitação recebida ainda.</div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Empresa</th>
+                  <th>Solicitante</th>
+                  <th>Recebido em</th>
+                  <th>Status</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody data-request-rows></tbody>
+            </table>
+          </div>
+          <div class="panel">
+            <h2>Itens sugeridos para produtos</h2>
+            <p class="helper">Itens enviados pelos clientes são listados para cadastro rápido.</p>
+            <ul data-products-list></ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

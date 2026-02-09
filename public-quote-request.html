@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitar orçamento | OrçaSaaS</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="public">
+    <div class="public-shell">
+      <header class="public-header">
+        <div>
+          <h1>Solicitação de orçamento</h1>
+          <p class="helper">Preencha os dados abaixo e receba um orçamento personalizado.</p>
+        </div>
+        <a class="button button-outline" href="index.html">Voltar ao painel</a>
+      </header>
+
+      <form class="panel" data-quote-form>
+        <h2>Dados do solicitante</h2>
+        <div class="form-grid">
+          <label>
+            Nome da empresa
+            <input type="text" name="companyName" placeholder="Ex.: Loja Horizonte" required />
+          </label>
+          <label>
+            Nome do solicitante
+            <input type="text" name="requester" placeholder="Ex.: Marina Souza" required />
+          </label>
+          <label>
+            E-mail para contato
+            <input type="email" name="email" placeholder="contato@empresa.com" required />
+          </label>
+          <label>
+            Telefone/WhatsApp
+            <input type="tel" name="phone" placeholder="(11) 90000-0000" required />
+          </label>
+          <label>
+            CPF/CNPJ
+            <input type="text" name="document" placeholder="00.000.000/0000-00" required />
+          </label>
+          <label>
+            Endereço completo
+            <input type="text" name="address" placeholder="Rua, número, bairro, cidade" required />
+          </label>
+        </div>
+
+        <h2>Itens do orçamento</h2>
+        <p class="helper">Descreva os itens para facilitar a precificação.</p>
+        <div class="item-list" data-items-container></div>
+        <button type="button" class="button button-outline" data-add-item>Adicionar item</button>
+
+        <div class="footer-actions">
+          <button type="reset" class="button button-outline">Limpar</button>
+          <button type="submit" class="button button-primary">Enviar solicitação</button>
+        </div>
+
+        <div class="alert hidden" data-alert></div>
+      </form>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
