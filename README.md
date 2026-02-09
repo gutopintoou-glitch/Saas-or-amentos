@@ -30,8 +30,8 @@ O sistema permite:
    python -m http.server 8000
    ```
 2. Acesse:
-   - Painel: `http://localhost:8000/index.html`
-   - Link público: `http://localhost:8000/public-quote-request.html`
+   - Painel: `http://localhost:8000/index.html` ou `http://localhost:8000/dashboard/`
+   - Link público: `http://localhost:8000/public-quote-request.html` ou `http://localhost:8000/public-quote-request/`
 
 ## Próximos passos
 
